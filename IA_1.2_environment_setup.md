@@ -1,4 +1,4 @@
-# Assignment 2 — Set Up and Verify Your Development Environment
+# Assignment 1.2 — Set Up and Verify Your Development Environment
 
 ## Assignment Type
 
