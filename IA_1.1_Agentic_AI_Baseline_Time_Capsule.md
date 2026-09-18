@@ -20,7 +20,7 @@ Complete this assignment **individually during class**.
 
 Create your own document, copy the questions below into it, and answer each question directly underneath.
 
-Each answer must contain **100–500 words**.
+Each answer must contain **50–500 words**.
 
 Clear and honest reasoning matters more than polished writing. It is acceptable to be uncertain. For example:
 
@@ -141,7 +141,7 @@ Do not submit a Google Docs link, Word file, screenshot, photograph, ZIP file, o
 
 | Criteria | Excellent | Good | Satisfactory | Unsatisfactory |
 | --- | --- | --- | --- | --- |
-| **Completion and response requirements** | **4 pts:** All 9 questions are answered directly and each response stays within the required 100–500 word range. | **3 pts:** All or almost all questions are answered, with one minor omission, underdeveloped response, or word-range issue. | **2 pts:** Several responses are incomplete, too brief, overly long, or only partly address the question. | **0–1 pt:** Many questions are missing, off-topic, or fail to meet the response requirements. |
+| **Completion and response requirements** | **4 pts:** All 9 questions are answered directly and each response stays within the required 50–500 word range. | **3 pts:** All or almost all questions are answered, with one minor omission, underdeveloped response, or word-range issue. | **2 pts:** Several responses are incomplete, too brief, overly long, or only partly address the question. | **0–1 pt:** Many questions are missing, off-topic, or fail to meet the response requirements. |
 | **Specificity and reasoning** | **3 pts:** Responses consistently explain *why* and use relevant examples, distinctions, checks, or situations. | **2 pts:** Reasoning is generally understandable but some responses remain generic or lightly explained. | **1 pt:** Responses mostly state opinions without adequately explaining the reasoning. | **0 pts:** Little or no meaningful reasoning is provided. |
 | **Personal and professional reflection** | **2 pts:** Responses clearly show the student's own perspective on responsibility, professional impact, and personal learning goals. | **1.5 pts:** Personal perspective is clear with only minor gaps. | **1 pt:** Some personal reflection is present but remains generic. | **0–0.5 pts:** Little meaningful personal reflection is present. |
 | **Submission and instruction compliance** | **1 pt:** Correct PDF format and filename, student information is complete, and instructions are followed. | **0.75 pts:** One minor instruction or submission issue. | **0.5 pts:** Several instruction or formatting issues, but the work remains assessable. | **0–0.25 pts:** Submission requirements are substantially not followed or the work cannot be assessed reliably. |
