@@ -22,7 +22,7 @@ You are preparing instructions for a coding agent. **Do not write or request an 
 
 > “Let staff move a booking to another room or time. If the move cannot be made, keep the original booking.”
 
-Before reading the stakeholder card, spend **5 minutes** recording three questions you would ask and why their answers matter. Preserve these initial answers in your submission.
+Before reading the stakeholder card, spend **5 minutes** recording three questions you would ask about the initial request above and why their answers matter. Preserve these initial answers in your submission.
 
 ### Stakeholder card — confirmed information for this exercise
 
