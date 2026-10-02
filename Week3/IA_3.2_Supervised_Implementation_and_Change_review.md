@@ -79,7 +79,7 @@ Report real results. If execution or repository access remains blocked, contact 
 
 ## Submission Requirements
 
-Submit your **GitHub repository URL and final commit hash** in Google Classroom. Keep the starter project files at the repository root, as described in README section 7. Commit and push the final code, `AGENTS.md`, tests and **`REVIEW.md`**. The instructor must have access; grant access if the repository is private. No PDF, code ZIP or transcript appendix is required. No branches or pull requests are required.
+Submit your **GitHub repository URL and final commit hash** in Google Classroom. **Create a new repository for it. Don't mix it with week 1-2 repos**. Keep the starter project files at the repository root, as described in README section 7. Commit and push the final code, `AGENTS.md`, tests and **`REVIEW.md`**. The instructor must have access; grant access if the repository is private.
 
 Use these headings in `REVIEW.md`:
 
