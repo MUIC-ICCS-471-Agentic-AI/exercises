@@ -10,9 +10,15 @@ You will implement two functions: `dispatcher.py → choose_elevator(...)` selec
 
 Allow about **75 minutes**. Use the supplied `elevator_lab` folder. Submit by the deadline in Classroom.
 
+**TODO** labels identify required actions. When an action produces submission evidence, the destination file is named.
+
 ## 1. Think through the policy — 15 minutes
 
-Read SPEC.md and inspect scenarios.py. The building has floors 1–8, with floor 1 as the lobby. Each elevator has a model safety capacity of **8 people × 65 kg = 520 kg**. Scenarios supply a simulated sensor reading, `load_kg`. A car needs room for another assumed 65 kg: `load_kg + 65 <= 520`. Each scenario asks for one decision from a snapshot.
+**>> TODO — Read `SPEC.md` and inspect `scenarios.py`.**
+
+The building has floors 1–8, with floor 1 as the lobby. Each elevator has a model safety capacity of **8 people × 65 kg = 520 kg**. Scenarios supply a simulated sensor reading, `load_kg`. A car needs room for another assumed 65 kg: `load_kg + 65 <= 520`. Each scenario asks for one decision from a snapshot.
+
+**>> TODO — Consider S1 and choose S2 or S3 for your predictions.**
 
 Think about **S1**, then **S2 or S3**. These are independent snapshots, not successive moments in one journey.
 
@@ -24,9 +30,13 @@ Think about **S1**, then **S2 or S3**. These are independent snapshots, not succ
 
 Both elevators are eligible in all three cases. Your policy determines which one to select.
 
+**>> TODO — Add your own S6 case to `scenarios.py`.**
+
 Add one valid **S6 scenario of your own** in scenarios.py. Copy an existing `Scenario(...)` entry, rename it S6, and change a meaningful detail such as load, direction or scheduled stops. Keep the five supplied scenarios. Predict the outcome before running it. Your case need not produce a different selection if you can explain why.
 
-Complete **POLICY.md yourself before implementation**: priorities, exact selection rule, tie-breaker and predictions for your three cases. Briefly describe another defensible policy that could choose differently in a scenario. You may ask AI to challenge your ideas, but make and explain your own decisions.
+**>> TODO — Complete `POLICY.md` yourself before implementation.**
+
+Record priorities, exact selection rule, tie-breaker and predictions for your three cases: **S1, your chosen S2 or S3, and S6**. Briefly describe another defensible policy that could choose differently in a scenario. You may ask AI to challenge your ideas, but make and explain your own decisions.
 
 > **Example of justification — one possible priority:** “I prefer using an elevator already travelling past the caller because it avoids activating the idle elevator. I accept an additional stop for passengers aboard. This aims to reduce additional movement; it does not prove lower energy consumption.”
 >
@@ -36,7 +46,13 @@ Load divided by 65 estimates occupancy; it does not establish an exact headcount
 
 ## 2. Plan and delegate — 20 minutes
 
-Create your own GitHub repository and commit the starter and your initial policy before implementation. Fill in PLAN.md; its brackets are prompts for your own short plan.
+**>> TODO — Create your GitHub repository and commit the starting work.**
+
+Commit the starter and your initial policy before implementation.
+
+**>> TODO — Complete `PLAN.md`.**
+
+Replace its bracketed prompts with your own short plan for the work below.
 
 | Role | Work | Files it may edit |
 |---|---|---|
@@ -44,24 +60,32 @@ Create your own GitHub repository and commit the starter and your initial policy
 | Display builder | Present scenarios, call the dispatcher and display the decision/reason | app.py |
 | Reviewer | Inspect the combined code and examine policy tradeoffs | Read-only |
 
+**>> TODO — Delegate to two implementation agents using `PROMPTS.md`.**
+
 Follow the **Start in Copilot or Claude** instructions in PROMPTS.md: open the project folder and chat, confirm your Python command, then paste the delegation prompt. For automatic delegation, check that two actual worker executions appear. For manual coordination, use a separate fresh chat for each role. Give both builders the shared specification, your policy, plan and code. Sequential worker runs are fine. If automatic setup takes more than five minutes, switch to separate sessions. Both routes can earn full marks.
 
 ## 3. Integrate, review and experiment — 25 minutes
 
-1. Wait for both builders to finish. If they edited your project directly, inspect those changes; if they worked elsewhere, integrate their two files. Run `python -m unittest -v` using your confirmed Python command (`py` on Windows if needed), and inspect the actual terminal result.
-2. Use **PROMPTS.md → Reviewer: after integration**, or its separate-session reviewer prompt, to inspect the **current combined implementation** against SPEC.md and POLICY.md. It should distinguish a coding defect, an inconsistent policy and an accepted tradeoff.
-3. Run `python app.py`, substituting your confirmed Python command as above. Compare the actual selections and reasons with your three predictions. Investigate any mismatch. Make or delegate a correction if justified, then rerun the tests and scenarios.
-4. Decide whether the outcomes serve your stated priority. Explain one benefit and one cost or limitation using a concrete scenario. A policy can be implemented correctly and still reveal an undesirable tradeoff.
+1. **>> TODO — Integrate `dispatcher.py` and `app.py`, then run the tests.** Wait for both builders to finish. If they edited your project directly, inspect those changes; if they worked elsewhere, integrate their two files. Run `python -m unittest -v` using your confirmed Python command (`py` on Windows if needed), and inspect the actual terminal result.
+2. **>> TODO — Ask a separate reviewer to inspect the combined work.** Use **PROMPTS.md → Reviewer: after integration**, or its separate-session reviewer prompt, to inspect the **current combined implementation** against SPEC.md and POLICY.md. It should distinguish a coding defect, an inconsistent policy and an accepted tradeoff.
+3. **>> TODO — Run the scenarios and record the results in `EVIDENCE.md`.** Run `python app.py`, substituting your confirmed Python command as above. Compare the actual selections and reasons with your three predictions. Investigate any mismatch. Make or delegate a correction if justified, then rerun the tests and scenarios.
+4. **>> TODO — Record your judgement in `EVIDENCE.md`.** Decide whether the outcomes serve your stated priority. Explain one benefit and one cost or limitation using a concrete scenario. A policy can be implemented correctly and still reveal an undesirable tradeoff.
 
 > **Example follow-up to a reviewer:** “You suggest choosing the nearer idle elevator. Check whether that is required by my written policy or is an alternative preference. Identify the relevant rule before recommending a change.”
 
-If review changes your mind about the policy, record why and update the policy and implementation together. Preserve the original reasoning in your commit history or a short evidence note. Do not change a prediction merely to match unexplained code.
+**>> TODO — If you revise your policy, update `POLICY.md` and the implementation together.**
+
+If review changes your mind about the policy, record why in `EVIDENCE.md` and update the policy and implementation together. Preserve the original reasoning in your commit history or a short evidence note. Do not change a prediction merely to match unexplained code.
 
 The supplied tests enforce shared behaviour, **not a preferred answer for scenarios where both elevators are eligible**. Passing them does not establish that the program follows your own policy; your scenario checks supply that evidence. Keep SPEC.md, models.py, rules.py and test_contract.py unchanged.
 
 ## 4. Record and submit — 15 minutes
 
+**>> TODO — Complete `EVIDENCE.md` and include the agent evidence.**
+
 Complete EVIDENCE.md with short bullets and the three-case results table. Include one brief output excerpt or screenshot for each builder and the reviewer. For automatic workers, show the separate worker runs. Full transcripts are unnecessary.
+
+**>> TODO — Commit and submit your repository link and final commit hash.**
 
 Commit the checked work. **Submit your GitHub repository link and final commit hash in Classroom.** Include the program, supplied files, completed POLICY.md, PLAN.md, EVIDENCE.md and any linked screenshots. Make the repository accessible to the lecturer.
 
